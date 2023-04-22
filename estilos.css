@@ -22,19 +22,13 @@ a{
 /* Cabecera */
 
 header {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(146, 1, 162);
-}
-
-/* Navigation */
-
-header nav {
-    height: 100px;
-    width: 100%;
     display: flex;
+    height: auto;
+    background-color: blueviolet;
     justify-content: space-between;
     align-items: center;
+    padding : 10px;
+    
 }
 
 .logo {
@@ -48,6 +42,32 @@ header nav {
     height: 100px;
 }
 
+.menu {
+    padding-right: 80px;
+}
+
+.menu a{
+    font-weight: 600;
+    padding-right: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.menu a:hover {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+}
+
+.login-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.login-icon img {
+    height: 50px;
+    padding-right: 30px;
+}
 
 
 
@@ -177,14 +197,6 @@ header nav {
     width: 200%;
     color: #333;
     cursor: pointer;
-}
-
-/* Estilo header movil */
-
-@media (max-width: 900px) {
-    header {
-
-    }
 }
 
   @media (max-width: 900px) {
