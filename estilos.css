@@ -1,0 +1,382 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
+
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration-color: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Cabecera */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(146, 1, 162);
+}
+
+/* Navigation */
+
+header nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url('img/fondo\ retro\ gamer.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    align-items: center;
+  }
+
+  .jumbotron h1 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: black;
+    text-stroke: 2px #0b0c0c;
+  }
+
+  .jumbotron h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .jumbotron h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding-top: 10px;
+  }
+  
+  .jumbotron form {
+    padding-top: 50px;
+    padding: 20px 0;
+  }
+  
+  .jumbotron input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 600px;
+    font-size: 16px;
+  }
+  
+  .jumbotron button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .terminos-y-condiciones a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.Titulo-consolas {
+    text-align: center;
+    padding: 40px;
+}
+
+  .Titulo-consolas h2 {
+    font-family: 'Press Start 2P', sans-serif;
+   font-size: 30px;     
+  }
+
+  .Titulo-consolas h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+/* Estilo banner de contacto */
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.players img {
+    display: flex;
+    flex: auto;
+    width: 100%;
+}
+
+/* Estilo de contacto */
+
+.Contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: purple;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dont-play-alone {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.no-juegues-solo-h2 h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 00;
+    color: #333;
+    background-color: white;
+}
+
+.comunidad-h1 h1 {
+    font-weight: bold;
+}
+
+.registro-comunidad button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    width: 200%;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilo header movil */
+
+@media (max-width: 900px) {
+    header {
+
+    }
+}
+
+  @media (max-width: 900px) {
+    .jumbotron {
+      padding: 50px 0;
+      align-items: center;
+    }
+    
+    .jumbotron input[type="email"], .jumbotron button {
+      width: 70%;
+    }
+    
+    .jumbotron input[type="email"] {
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .jumbotron button {
+      border-radius: 4px;
+      width: 50%;
+    }
+
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+
+    .jumbotron h3 {
+        width: 100%;
+        align-items: center;
+    } 
+    
+    .Contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr
+        );
+    }
+
+  }    
+  .cards-consolas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Para mejorar el scroll en dispositivos móviles */
+    padding-bottom: 40px;
+  }
+  
+  .cards-consolas::-webkit-scrollbar {
+    display: none; /* Oculta las barras de scroll */
+  }
+  
+  .card-pcgamer,
+  .card-xbox,
+  .card-ps5,
+  .card-ns {
+    scroll-snap-align: center; /* Hace que los elementos se alineen al centro del carrusel */
+  }
+  
+  .btn-comprar {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .card-pcgamer,
+  .card-xbox,
+  .card-ps5,
+  .card-ns {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card-pcgamer:hover,
+  .card-xbox:hover,
+  .card-ps5:hover,
+  .card-ns:hover {
+    transform: scale(1.05); /* Agrandar ligeramente el elemento al pasar el cursor sobre él */
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cards-consolas {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+     padding: auto;
+      
+    }
+
+    .section-footer-left {
+        width: 100%;
+        padding: 50px;
+        padding-bottom: 10px;
+    }
+
+    .section-footer-center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-footer-right {
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+    .copy {
+        padding: 50px;
+        padding-top: 0px;
+    }
+  }
+
+ 
+  
+/* Estilo de consolas */
+
+.Consolas .cards-consolas {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin: auto
+    
+}
+
+.cards-consolas img {
+    
+    max-height: 250px; /* ajusta esta medida a la altura que desees */
+  }
+
+ .btn-comprar {
+    background-color: yellow;
+    width: max-content;
+    height: 35px;
+   
+ }
+
+ 
+/* Footer */
+
+footer {
+    
+    width: 100%;
+    height: auto;;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    border: 1px solid #e4e4e4;
+	grid-template-columns: repeat(3, 1fr);
+    padding: 100px
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    padding-right: 15px;
+    align-items: center;
+}
+
+footer .section-footer-left {
+    justify-content: left;
+}
+
+footer .section-footer-center {
+    justify-content: center;
+}
+
+footer .section-footer-right{
+    justify-content: right;
+}
+
+.copy {
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+
+footer ul li a{
+    color: #0b0c0c;
+    
+}
+
+
+  
